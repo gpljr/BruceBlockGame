@@ -6,6 +6,9 @@ public class CameraPlayerControl : MonoBehaviour {
     [SerializeField]
     private float _rotationSpeed;
 
+    [SerializeField]
+    private float _scalingValue;
+
     // Max limits to clamp Y axis
     float yMinLimit = -20f;
     float yMaxLimit = 80f;
@@ -23,6 +26,7 @@ public class CameraPlayerControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         ManageRotation();
+        ManageScaling();
 	}
 
     void ManageRotation() {
@@ -45,5 +49,27 @@ public class CameraPlayerControl : MonoBehaviour {
         if (angle > 360)
             angle -= 360;
         return Mathf.Clamp(angle, min, max);
+    }
+
+    public void ManageScaling()
+    {
+
+        float Scale;
+        if (Input.GetAxis("Mouse ScrollWheel") != 0)
+        {
+
+            Scale = Input.GetAxis("Mouse ScrollWheel") * _scalingValue;
+            if (transform.localScale.x <= 1 && Scale > 0) {
+                Scale = 0;
+            }
+            else if (transform.localScale.x >= 10 && Scale < 0) {
+                Scale = 0;
+            }
+            else {
+                Scale = Input.GetAxis("Mouse ScrollWheel") * _scalingValue;
+            }
+
+            transform.localScale = Vector3.Lerp(transform.localScale, transform.localScale + new Vector3(1f, 1f, 1f) * -Scale, Time.deltaTime);
+        }
     }
 }
