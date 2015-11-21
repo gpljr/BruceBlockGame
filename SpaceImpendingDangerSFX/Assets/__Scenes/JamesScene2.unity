@@ -9647,9 +9647,8 @@ GameObject:
   - 4: {fileID: 709839600}
   - 33: {fileID: 709839602}
   - 23: {fileID: 709839601}
-  - 65: {fileID: 709839603}
   m_Layer: 0
-  m_Name: Walls
+  m_Name: hugeAssWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9700,18 +9699,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 709839599}
   m_Mesh: {fileID: 831298924}
---- !u!65 &709839603
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 709839599}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 45.2197533, y: 6.82708693, z: 28.4049606}
-  m_Center: {x: -5.70774269, y: 2.91354775, z: -1.94591475}
 --- !u!1 &715306415
 GameObject:
   m_ObjectHideFlags: 0
@@ -9851,6 +9838,7 @@ GameObject:
   - 4: {fileID: 720206936}
   - 33: {fileID: 720206938}
   - 23: {fileID: 720206937}
+  - 65: {fileID: 720206939}
   m_Layer: 0
   m_Name: Grounds
   m_TagString: Untagged
@@ -9903,6 +9891,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 720206935}
   m_Mesh: {fileID: 963766937}
+--- !u!65 &720206939
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720206935}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.0105782, y: 1.71842094e-05, z: 5.14955139}
+  m_Center: {x: -12.5410061, y: 1.5246741e-05, z: -11.8138351}
 --- !u!1 &721198806
 GameObject:
   m_ObjectHideFlags: 0
@@ -12394,6 +12394,7 @@ GameObject:
   - 4: {fileID: 924434922}
   - 33: {fileID: 924434924}
   - 23: {fileID: 924434923}
+  - 65: {fileID: 924434925}
   m_Layer: 0
   m_Name: Grounds
   m_TagString: Untagged
@@ -12446,6 +12447,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 924434921}
   m_Mesh: {fileID: 436382962}
+--- !u!65 &924434925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 924434921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.4059162, y: 1.8800094e-05, z: 6.67559242}
+  m_Center: {x: 17.4067078, y: -3.40637871e-06, z: -4.40539217}
 --- !u!1 &927491790
 GameObject:
   m_ObjectHideFlags: 0
@@ -26660,6 +26673,7 @@ GameObject:
   - 4: {fileID: 1930622675}
   - 33: {fileID: 1930622677}
   - 23: {fileID: 1930622676}
+  - 65: {fileID: 1930622678}
   m_Layer: 0
   m_Name: Grounds
   m_TagString: Untagged
@@ -26712,6 +26726,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1930622674}
   m_Mesh: {fileID: 646503803}
+--- !u!65 &1930622678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930622674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.61218262, y: 1.90895371e-05, z: 6.67562675}
+  m_Center: {x: 10.3978205, y: -1.4991334e-05, z: -4.40541649}
 --- !u!1 &1932415711
 GameObject:
   m_ObjectHideFlags: 0
