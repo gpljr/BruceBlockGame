@@ -16,8 +16,6 @@ public class MoveAsteroidToStation : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		LeanTween.rotateAround (station.gameObject, Vector3.forward, 180f, 4f);
-
 		cameraShakeIntensity = .03f;
 
 		LeanTween.move (gameObject, station.position + offset, 4f).setEase(LeanTweenType.easeInQuad).setOnComplete(() => {
