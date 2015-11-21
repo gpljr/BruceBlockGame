@@ -45,6 +45,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &101878
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 487830}
+  m_Layer: 0
+  m_Name: CameraHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &103474
 GameObject:
   m_ObjectHideFlags: 1
@@ -2661,7 +2676,7 @@ Transform:
   m_LocalPosition: {x: -35.0328255, y: -24.1546974, z: 85.1438751}
   m_LocalScale: {x: 3.12988591, y: 3.12988687, z: 3.12988687}
   m_Children:
-  - {fileID: 470224}
+  - {fileID: 487830}
   m_Father: {fileID: 475172}
   m_RootOrder: 0
 --- !u!4 &435866
@@ -3310,11 +3325,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110932}
-  m_LocalRotation: {x: .098585479, y: 0, z: 0, w: .995128632}
-  m_LocalPosition: {x: 0, y: .102878667, z: -.578294873}
-  m_LocalScale: {x: .319500476, y: .319500387, z: .319500357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 433928}
+  m_Father: {fileID: 487830}
   m_RootOrder: 0
 --- !u!4 &471384
 Transform:
@@ -3359,7 +3374,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 1449.32996, y: 33.9827347, z: 1245.58997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 433928}
@@ -3476,7 +3491,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116168}
-  m_LocalRotation: {x: .532675207, y: .0703404546, z: .836132765, w: -.110415146}
+  m_LocalRotation: {x: .532675147, y: .0703404471, z: .836132646, w: -.110415131}
   m_LocalPosition: {x: 2.22714643e-05, y: -6.1504652e-05, z: .0260270257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3504,6 +3519,19 @@ Transform:
   - {fileID: 471384}
   - {fileID: 424792}
   m_Father: {fileID: 419804}
+  m_RootOrder: 0
+--- !u!4 &487830
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101878}
+  m_LocalRotation: {x: .0985854641, y: 0, z: 0, w: .995128632}
+  m_LocalPosition: {x: 0, y: 0, z: -.57829982}
+  m_LocalScale: {x: .319500506, y: .319500506, z: .319500506}
+  m_Children:
+  - {fileID: 470224}
+  m_Father: {fileID: 433928}
   m_RootOrder: 0
 --- !u!4 &488166
 Transform:
@@ -3615,7 +3643,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184892}
-  m_LocalRotation: {x: .593456328, y: .103461184, z: -.79634583, w: -.0542087704}
+  m_LocalRotation: {x: .593456388, y: .103461199, z: -.796345949, w: -.0542087778}
   m_LocalPosition: {x: .0829999968, y: .0289999992, z: .00800000038}
   m_LocalScale: {x: .854220629, y: .817724884, z: .867870331}
   m_Children: []
@@ -3797,7 +3825,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -3821,7 +3851,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -4006,7 +4038,9 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -4111,7 +4145,9 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -4174,7 +4210,9 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -4221,7 +4259,9 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
