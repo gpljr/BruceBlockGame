@@ -46,16 +46,16 @@ Material:
     m_Floats:
       data:
         first:
+          name: _InvFade
+        second: 1
+      data:
+        first:
           name: _LightScale
         second: 1
       data:
         first:
           name: _AtmosFalloff
         second: 2
-      data:
-        first:
-          name: _InvFade
-        second: 1
     m_Colors:
       data:
         first:
@@ -63,13 +63,13 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
           name: _AtmosNear
-        second: {r: .168627501, g: .737254918, b: 1, a: 1}
+        second: {r: 1, g: .805057466, b: .168627501, a: 1}
       data:
         first:
           name: _AtmosFar
-        second: {r: .455780804, g: .518703878, b: .98507458, a: 1}
-      data:
-        first:
-          name: _TintColor
-        second: {r: .5, g: .5, b: .5, a: .5}
+        second: {r: .91911763, g: .650093913, b: .168955445, a: 1}
