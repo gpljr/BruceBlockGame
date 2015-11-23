@@ -4,4 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/__Scenes/_StartedScene.unity
+  - enabled: 1
+    path: Assets/__Scenes/JamesScene3.unity
+  - enabled: 1
+    path: Assets/__Scenes/_AsteroidRevealScene.unity
+  - enabled: 1
+    path: Assets/__Scenes/George's level.unity
+  - enabled: 1
+    path: Assets/__Scenes/_AsteroidApproachScene.unity
+  - enabled: 1
+    path: Assets/__Scenes/JamesScene2.unity
+  - enabled: 1
+    path: Assets/__Scenes/_AsteroidCollideScene.unity
+  - enabled: 1
+    path: Assets/__Scenes/SciFi Level Kylie.unity
+  - enabled: 1
+    path: Assets/__Scenes/_EndingFallingScene.unity
