@@ -6,7 +6,10 @@ public class BeginningDoorMoving : MonoBehaviour {
 	bool beginMoving;
 	float speed=1f;
 	 float x,y,z;
-	 //public Image _image;
+    //public Image _image;
+
+    [SerializeField]
+    KeyCode _press;
 
 	// Use this for initialization
 	void Start () {
@@ -17,14 +20,14 @@ public class BeginningDoorMoving : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	if(Input.GetKeyDown(KeyCode.O))
+	if(Input.GetKeyDown(_press))
 		{
 			beginMoving=true;
 			
 		}
 		if(beginMoving)
 		{
-			transform.position+=new Vector3 (Time.deltaTime * speed ,0,0);
+			transform.localPosition+=new Vector3 (Time.deltaTime * speed ,0,0);
 			//StartCoroutine(Fade(0.4f,false));
 		}
 	}
