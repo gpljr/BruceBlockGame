@@ -117,7 +117,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b7603d09fda257d45a953bbcdee642fd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b7603d09fda257d45a953bbcdee642fd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -180,7 +180,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400004, guid: 9783b65863602db41bda013272222888, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 330846411}
-  m_LocalRotation: {x: .669015586, y: -.41270873, z: .324536443, w: .526085258}
+  m_LocalRotation: {x: .706426024, y: -.338600129, z: .232094809, w: .576579809}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -246,7 +246,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -351,7 +353,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -387,8 +391,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 455825883}
-  m_LocalRotation: {x: 0, y: .203556046, z: 0, w: -.979063332}
-  m_LocalPosition: {x: 45.5, y: 91.2300034, z: -52.0999985}
+  m_LocalRotation: {x: 0, y: -.412234724, z: 0, w: -.911077738}
+  m_LocalPosition: {x: 26.7800007, y: 89.1600037, z: -46.3899994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1549506302}
@@ -405,16 +409,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48df477ebee834fa28a934dec838bdf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroid: {fileID: 1469163730}
-  station: {fileID: 743645324}
-  camera: {fileID: 1549506301}
+  targetPosition: {x: 39.7900009, y: 91.8700027, z: -48.6199989}
+  asteroid: {fileID: 1959170111}
+  station: {fileID: 743645320}
 --- !u!1 &743645320 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100066, guid: 33d36e4deb166f9479f5ffc18a6a93dd, type: 3}
-  m_PrefabInternal: {fileID: 2086542387}
---- !u!4 &743645324 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400066, guid: 33d36e4deb166f9479f5ffc18a6a93dd, type: 3}
   m_PrefabInternal: {fileID: 2086542387}
 --- !u!114 &743645325
 MonoBehaviour:
@@ -671,11 +671,6 @@ MonoBehaviour:
     type: 3}
   colorCorrectionSelectiveShader: {fileID: 4800000, guid: e515e0f94cefc4c0db54b45cba621544,
     type: 3}
---- !u!20 &1549506301 stripped
-Camera:
-  m_PrefabParentObject: {fileID: 2000000, guid: b7603d09fda257d45a953bbcdee642fd,
-    type: 2}
-  m_PrefabInternal: {fileID: 326220662}
 --- !u!4 &1549506302 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b7603d09fda257d45a953bbcdee642fd, type: 2}
@@ -864,6 +859,36 @@ Prefab:
     - {fileID: 11451740, guid: d1e607029cc89444391ee3b980a32a75, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d1e607029cc89444391ee3b980a32a75, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1959170111 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: d1e607029cc89444391ee3b980a32a75, type: 2}
+  m_PrefabInternal: {fileID: 1902201628}
+--- !u!114 &1959170115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959170111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e204df64a83c9a442b743c58553d1778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1959170116
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959170111}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2086542387
 Prefab:
   m_ObjectHideFlags: 0
